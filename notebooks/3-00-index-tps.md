@@ -35,7 +35,7 @@ nbhosting:
 
 quand on a fait plusieurs modifications distinctes, et qu'on veut les grouper en plusieurs commits, il faut pouvoir gérer **finement les ajouts dans l'index**, c'est-à-dire au niveau du bloc ou de la ligne
 
-https://github.com/ue12-p22/git-tp-add-by-lines
+<https://github.com/ue12-p22/git-tp-add-by-lines>
 
 +++
 
@@ -52,9 +52,9 @@ comment faire pour réconcilier votre copie locale avec la nouvelle version du c
 
 et que se passe-t-il alors exactement dans votre copie locale, si vous avez vous-même fait des changements dans les notebooks ?
 
-ce TP demande une préparation spécifique par groupe, une fois que c'est prêt visitez
-
-https://github.com/ue12-p22/git-tp-clone-pull-groupe`n`
+ce TP demande une préparation spécifique par groupe; suivez les instructions de votre enseignant, une fois que c'est prêt vous devrez visiter une URL **dans le genre de**  
+*https://github.com/ue12-p22/git-tp-clone-pull-groupe1*  
+1 étant ici le **numéro de votre groupe**
 
 +++
 
@@ -67,7 +67,7 @@ https://github.com/ue12-p22/git-tp-clone-pull-groupe`n`
 vous travaillez à plusieurs dans un repo, et vous n'**arrivez pas à pousser un commit** ?  
 c'est sûrement que quelqu'un d'autre a poussé avant vous…
 
-https://github.com/ue12-p22/git-tp-killing-push
+<https://github.com/ue12-p22/git-tp-killing-push>
 
 +++
 
@@ -80,7 +80,7 @@ https://github.com/ue12-p22/git-tp-killing-push
 un tp plus complet où on simule un travail en groupe  
 à faire en groupes de 3 ou 4
 
-https://github.com/ue12-p22/git-tp-teamwork
+<https://github.com/ue12-p22/git-tp-teamwork>
 
 +++
 
