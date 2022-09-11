@@ -1,0 +1,21 @@
+format: jb-book
+root: 1-00-intro
+parts:
+- caption: "setup"
+  chapters:
+  - file: 0-00-setup
+- caption: "git en local"
+  chapters:
+  - file: 1-01-git-local
+  - file: 1-02-summary-1
+  - file: 1-03-good-practices
+  - file: 1-04-more-on-merging
+  - file: 1-05-managing-changes
+- caption: "git en réseau"
+  chapters:
+  - file: 2-01-synchro-pull
+  - file: 2-02-synchro-push
+  - file: 2-03-summary-2
+- caption: "git pour les cours"
+  chapters:
+  - file: 4-00-git-for-the-courses
