@@ -93,4 +93,4 @@ un tp plus complet où on simule un travail en groupe
 un tp à faire individuellement  
 on crée délibérément un conflit pour savoir reconnaître les symptômes, et s'entrainer à résoudre le conflit
 
-[le README est ici](../tps/tp-conflict/README.md)
+<https://github.com/ue12-p22/git-tp-conflict>
