@@ -29,7 +29,7 @@ nbhosting:
 
 ## un survol en slides
 
-Pour les néophytes, [voici un slideshow](media/kn2-introduction-git.pdf) pour illustrer rapidement **le besoin**, et **les cas d'usage** les plus simples; [accessible aussi ici](https://github.com/ue12-p21/git/raw/main/notebooks/media/introduction-git.pdf)
+Pour les néophytes, [voici un slideshow](media/kn2-introduction-git.pdf) pour illustrer rapidement **le besoin**, et **les cas d'usage** les plus simples; [accessible aussi ici](https://github.com/ue12-p22/git/raw/main/notebooks/media/introduction-git.pdf)
 
 la présentation contient des animations, assurez-vous de bien la visionner en mode slideshow  
 durée : grand maximum 10', il ne s'agit **pas de tout comprendre** mais juste de brosser le contexte
@@ -63,10 +63,10 @@ En réalité il potentiellement utile pour *pratiquement* tout ce qui est numér
 ## d'autres ressources pour ce cours
 
 * en version HTML statique :  
-  https://nbhosting.inria.fr/builds/ue12-p21-git/handouts/latest/
+  https://nbhosting.inria.fr/builds/ue12-p22-git/handouts/latest/
 
 * les sources de ce cours :
-  https://github.com/ue12-p21/git
+  https://github.com/ue12-p22/git
   
 * également utile, une *cheat sheet* éditée par github :
   https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf

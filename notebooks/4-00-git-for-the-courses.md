@@ -59,9 +59,9 @@ expliqué ici](0-00-setup.md)
 * aller sur l'interface `Git Bash`
 * se déplacer (avec les commandes `pwd` et `ls` et `cd`) dans le dossier souhaité
 * une fois dans le dossier où vous souhaitez cloner les notebooks  
-  (par exemple `/Users/jeanmineur/git/ue12-p21`), faire
+  (par exemple `/Users/jeanmineur/git/ue12-p22`), faire
   ```bash
-  git clone https://github.com/ue12-p21/python-numerique.git
+  git clone https://github.com/ue12-p22/python-numerique.git
   ```
   pour trouver la bonne URL, regardez comment on fait dans la vidéo  
   en faisant bien attention de choisir le mode `SSH` comme ceci:  
@@ -72,7 +72,7 @@ expliqué ici](0-00-setup.md)
   les  notebooks ! ils sont généralement dans un sous-dossier `notebooks/`
 
 en naviguant sur github et plus particulièrement sur la page de l'utilisateur
-ue12-p21 (https://github.com/ue12-p21/), vous pouvez voir l'ensemble des
+ue12-p22 (https://github.com/ue12-p22/), vous pouvez voir l'ensemble des
 répertoires des cours d'informatique que vous avez eu jusque-là !
 
 +++

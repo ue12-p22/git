@@ -159,7 +159,7 @@ et vous ajoutez une clé SSH; mettez ce que vous voulez comme titre, mais vous c
 à ce stade pour tester vous pouvez tout simplement faire
 
 ```
-git clone ssh://git@github.com/ue12-p21/git-sandbox.git
+git clone ssh://git@github.com/ue12-p22/git-sandbox.git
 ```
 
 qui ne fonctionnera pas si votre clé n'est pas correctement reconnue

@@ -86,7 +86,7 @@ nous allons l'exécuter sur un repo de test pour mettre en évidence d'autres ef
 vérifiez que vous n'avez pas de dossier qui s'appelle `sandbox`, et tapez la commande
 
 ```bash
-$ git clone https://github.com/ue12-p21/git-sandbox sandbox
+$ git clone https://github.com/ue12-p22/git-sandbox sandbox
 Cloning into 'sandbox'...
 remote: Enumerating objects: 4, done.
 remote: Counting objects: 100% (4/4), done.
@@ -129,7 +129,7 @@ d'ailleurs pour vérifier on peut faire
 
 ```bash
 $ git remote get-url origin
-https://github.com/ue12-p21/git-sandbox
+https://github.com/ue12-p22/git-sandbox
 ```
 
 +++
