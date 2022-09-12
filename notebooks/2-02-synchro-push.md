@@ -13,16 +13,7 @@ nbhosting:
   title: "synchro entre d\xE9p\xF4ts : pousser"
 ---
 
-<div class="licence">
-<span>Licence CC BY-NC-ND</span>
-<div style="display:grid">
-    <span>Thierry Parmentelat</span>
-    <span>Valérie Roy</span>
-</div>
-</div>
-
-<img src="media/inria-25-alpha.png">
-<img src="media/ensmp-25-alpha.png">
+Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 +++
 
@@ -52,6 +43,7 @@ première grosse différence avec le `pull`
 nous essayons de **faire des modifications** dans le dépôt distant, et du coup il va nous falloir **les droits en écriture** !
 
 c'est un sujet qu'on a déjà effleuré dans les slides d'introduction où, souvenez-vous, on avait vu que Bob pouvait collaborer avec Alice si :
+
 * soit si elle lui donnait les droits d'écrire dans son dépôt,
 * soit en passant par son *fork*, dans lequel il peut écrire
 

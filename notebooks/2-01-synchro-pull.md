@@ -13,16 +13,7 @@ nbhosting:
   title: "synchro entre d\xE9p\xF4ts : tirer"
 ---
 
-<div class="licence">
-<span>Licence CC BY-NC-ND</span>
-<div style="display:grid">
-    <span>Thierry Parmentelat</span>
-    <span>Valérie Roy</span>
-</div>
-</div>
-
-<img src="media/inria-25-alpha.png">
-<img src="media/ensmp-25-alpha.png">
+Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 +++
 
@@ -159,6 +150,7 @@ le premier point important à retenir, c'est que
 * `git fetch` est une opération **totalement inoffensive**  
   en ce sens qu'elle n'a **pas d'impact** sur l'état de notre dépôt  
   (commit courant + index + fichiers)
+
 * **dans un `pull` par contre**, c'est la partie `merge` - qu'on a déjà étudiée  
   qui elle, peut **avoir un impact sur l'état du dépôt** (commit courant + index + fichiers)
   
@@ -173,6 +165,7 @@ le second point à retenir, c'est le rôle des références de branches distante
 `origin/main`
 
 on a vu dans la vidéo que `origin/main`:
+
 * ça correspond à une étiquette **locale** (dans le repo local)
 * qui nous permet de savoir où se trouve la branche `main` dans le dépôt **distant** (le remote) `origin`
 

@@ -14,16 +14,7 @@ nbhosting:
   title: git pour les cours
 ---
 
-<div class="licence">
-<span>Licence CC BY-NC-ND</span>
-<div style="display:grid">
-    <span>Thierry Parmentelat</span>
-    <span>Valérie Roy</span>
-</div>
-</div>
-
-<img src="media/inria-25-alpha.png">
-<img src="media/ensmp-25-alpha.png">
+Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 +++
 
@@ -70,8 +61,10 @@ expliqué ici](0-00-setup.md)
   pour trouver la bonne URL, regardez comment on fait dans la vidéo  
   en faisant bien attention de choisir le mode `SSH` comme ceci:  
   <img src="media/github-choose-ssh.png" width="400px">
+
 * un dossier va être créé, ici il s'appelle `python-numerique`  
   (si vous préférez un autre nom, ajoutez le à la commande ci-dessus)
+
 * dans le dossier choisi, vous allez trouver tout le contenu du cours, y compris
   les  notebooks ! ils sont généralement dans un sous-dossier `notebooks/`
 
@@ -88,6 +81,7 @@ répertoires des cours d'informatique que vous avez eu jusque-là !
   ```bash
   conda activate pynum
   ```
+
 * *optionnel*: vous pouvez aussi créer un environnement virtuel en lui donnant
   un nom (et éventuellement la version de `python` que vous voulez), n'oubliez
   pas de le sélectionner (l'activer)
@@ -101,6 +95,7 @@ répertoires des cours d'informatique que vous avez eu jusque-là !
   ```bash
   pip install -r requirements.txt
   ```
+
 * a minima il vous faut avoir installé `jupyter` et `jupytext`  
   qui devraient en principe être installés à ce stade; si ce n'est pas le cas,
   faites
@@ -127,6 +122,7 @@ avant chaque nouveau cours, pour mettre à jour votre dossier de cours:
 * lancer `Git Bash`
 * vous rendre dans le dossier local où vous avez cloné le répertoire  
   (la commande `git status` devrait fonctionner à cet endroit)
+
 * faire `git pull`
 * il est possible que tout fonctionne bien :)
 * néanmoins, si jamais **vous avez modifié certains fichiers**, il vous faudra
@@ -137,6 +133,7 @@ avant chaque nouveau cours, pour mettre à jour votre dossier de cours:
   ```
 
   (le `-u` signifie "*ajouter seulement les fichiers que j'ai modifiés*")
+
 * après cela, refaites `git pull`
 
 +++
@@ -155,6 +152,7 @@ comment les résoudre:
 * après le `git pull`, faites un `git status`  
 * les fichiers en rouge dans la catégorie `unmerged paths` correspondent à ceux
   qui sont en conflit.
+
 * ouvrez les fichiers correspondants sur vscode.
   * les blocs en conflits (potentiellement plusieurs par fichier) ressemblent à ça :
     ```text
@@ -164,9 +162,11 @@ comment les résoudre:
     le code distant
     >>>>>>> origin/main
     ```
+
 * vous devez alors choisir le code final que vous gardez (soit en ne laissant
   qu'un seul des deux blocs dans le fichier, soit en faisant un mixte des deux);
   débarrassez-vous aussi des lignes-balises en `<<<` et `===` et `>>>`
+
 * une fois tous les conflits de tous les fichiers résolus, vous pouvez faire
 `git add` des fichiers en question, et enfin
   ```bash

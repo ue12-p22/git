@@ -13,16 +13,7 @@ nbhosting:
   title: la fusion
 ---
 
-<div class="licence">
-<span>Licence CC BY-NC-ND</span>
-<div style="display:grid">
-    <span>Thierry Parmentelat</span>
-    <span>Valérie Roy</span>
-</div>
-</div>
-
-<img src="media/inria-25-alpha.png">
-<img src="media/ensmp-25-alpha.png">
+Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 +++
 
@@ -131,6 +122,7 @@ allons-y, on va provoquer cette situation en pratique :
 
 * on va repartir d'un dépôt vierge, pour pouvoir expérimenter tranquillement, 
   et on va commencer par y créer un fichier unique
+
 * on va créer deux branches distinctes qui touchent au même endroit du fichier
 * du coup la fusion va échouer en signalant un conflit
 
@@ -176,6 +168,7 @@ git commit -m"le formulaire vierge"
 ce qu'on veut faire, c'est simuler deux changements faits en même temps par deux personnes différentes; disons qu'on a deux profs, Minerva McGonagall et Albus Dumbledore, qui remplissent chacun leur partie
 
 pour simplifier on va dire que 
+
 * McGonagall utilise la branche `main`, et 
 * Dumbledore utilise une branche `dumbledore`
 
@@ -216,6 +209,7 @@ pour la deuxième version, on a besoin de créer la branche `dumbledore` et de r
   git branch dumbledore HEAD~
   git switch dumbledore
   ```
+
 * ou tout faire d'un coup avec le raccourci `git switch -c`  
    ```bash
    git switch -c dumbledore HEAD~
@@ -240,9 +234,11 @@ et à ce stade le repo ressemble à ceci
 
 ```bash
 $ git log --all --graph --oneline
+
 * 34fa617 (HEAD -> dumbledore) notes dumbledore
 | * 65b135a (main) notes mcgonagall
 |/
+
 * 6f201cc le formulaire vierge
 ```
 
@@ -307,8 +303,10 @@ dans quel état est notre dépôt à ce stade ?
 
   no changes added to commit (use "git add" and/or "git commit -a")  
   ```
+
 * on apprend comme ça que c'est dans `form.txt` que se situe le souci  
   (bon nous on n'a qu'un seul fichier, mais quand il y a 200 c'est une information intéressante)  
+
 * et `git merge` nous a laissé les conflits **annotés directement dans le code**  
   avec cette forme qui est facile à voir visuellement
   ```console
@@ -318,6 +316,7 @@ dans quel état est notre dépôt à ce stade ?
   total        : 15
   >>>>>>> dumbledore
   ```  
+
 * noter enfin qu'à ce stade, on ne **peut plus** utiliser la commande `git commit` pour créer un nouveau commit  
   il faut d'abord retourner dans un état propre: **nettoyer le repo**
 
@@ -363,6 +362,7 @@ la mauvaise nouvelle, c'est qu'aucune des deux ne convient, et ce qu'on va faire
   ```bash
   git add form.txt
   ```
+
 * et là on peut concrétiser le merge en faisant
   ```bash
   git merge --continue
@@ -376,11 +376,14 @@ la mauvaise nouvelle, c'est qu'aucune des deux ne convient, et ce qu'on va faire
 * et tout le monde est content
   ```console
   git log --oneline --graph
+
   *   4e94d65 (HEAD -> main) fusion après conflit résolu à la main
   |\
   | * 065c80e (dumbledore) notes dumbledore
+
   * | 975505c notes mcgonagall
   |/
+
   * 2230fb9 le formulaire vierge
   ```
   et

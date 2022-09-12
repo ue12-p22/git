@@ -13,16 +13,7 @@ nbhosting:
   title: bonnes pratiques
 ---
 
-<div class="licence">
-<span>Licence CC BY-NC-ND</span>
-<div style="display:grid">
-    <span>Thierry Parmentelat</span>
-    <span>Valérie Roy</span>
-</div>
-</div>
-
-<img src="media/inria-25-alpha.png">
-<img src="media/ensmp-25-alpha.png">
+Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 +++
 
@@ -56,6 +47,7 @@ En effet il arrive souvent qu'on se retrouve avec dans les fichiers une accumula
 Le premier intérêt de  faire comme ça, c'est pour la maintenance
 
 Imaginez: vous devez reporter la correction d'un bug dans une version client qui est vieille de deux mois;  
+
 * le bug est déjà corrigé dans la version de développement  
 * si la correction du bug a été bien proprement isolée dans un commit qui ne fait que ça, on va facilement pouvoir appliquer ce commit sur la branche de maintenance (pour les curieux, voyez `git cherry-pick`)  
 * mais si au contraire c'est tout mélangé avec d'autres choses, ça va être problématique et on va devoir réappliquer le bugfix à la main, ballot !
@@ -135,6 +127,7 @@ Lorsqu'on utilise une plateforme comme github, il est fréquent de mentionner da
 On n'en a pas encore parlé, mais dans un projet github il y a la notion de *issue*, qui sont des simples fils de discussion, qui peuvent servir entre autres à signaler un bug; et la notion de *PR*, qui permettent aux autres de soumettre du code
 
 ainsi si par exemple l'*issue* numéro 123 signale un bug, et qu'on commite une correction pour ce bug, on va écrire simplement quelque part `close #123`, ce qui permettra 
+
 * de lier le commit avec l'*issue*, et donc d'améliorer la traçabilité 
 * et même de fermer automatiquement l'issue en question.
 

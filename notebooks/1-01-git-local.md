@@ -13,16 +13,7 @@ nbhosting:
   title: les bases
 ---
 
-<div class="licence">
-<span>Licence CC BY-NC-ND</span>
-<div style="display:grid">
-    <span>Thierry Parmentelat</span>
-    <span>Valérie Roy</span>
-</div>
-</div>
-
-<img src="media/inria-25-alpha.png">
-<img src="media/ensmp-25-alpha.png">
+Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 +++
 
@@ -345,6 +336,7 @@ Que vous dit `git` ? Rien ! Il n'est pas très locace. Comment pouvons nous voir
 <img src="media/term-status-green-red.png">
 
 Voilà, maintenant `git status` vous montre
+
 * le fichier `readme.md` en **vert** dans la partie des **modifications qui seront committées**,
 * le fichier `licence.txt`, quant à lui, est resté en rouge.
 
@@ -396,6 +388,7 @@ Donc nous y voilà, `git` a une commande `commit`, pour créer un commit; pour l
 * lancer juste `git commit`, et dans ce cas-là un éditeur de code va se lancer automatiquement; on est censé écrire le message dans le fichier, puis sauver et quitter; le truc c'est que vous n'êtes pas forcément confortable avec l'éditeur par défaut (notamment si c'est `vi` qui est notoirement cryptique); notez aussi qu'on peut choisir, une bonne fois pour toutes, 
 un autre éditeur comme par exemple `nano` avec la commande `git config --global
 core.editor "nano"`
+
 * donc pour l'instant on va laisser cette option-là de coté, et indiquer le message à `git commit` directement **sur la ligne de commande** avec l'option `-m`; et en plus depuis le notebook, c'est plus simple aussi de donner le commentaire sur la ligne de commande.
 
 +++
@@ -536,6 +529,7 @@ Donc maintenant où en est-on ?
 
     * deux changements, en fait des ajouts de lignes -  
       l'une dans `readme.md`, l'autre dans `licence.txt`
+
     * une création, avec `fact.py`
 
 * Du coté du **dépôt**
@@ -680,6 +674,7 @@ Pour chaque commit, vous avez:
 +++ {"tags": ["level_intermediate"]}
 
 On parle rapidement de l'identifiant d'un commit comme `34269b459201f87b65e7c47b89c93a99a8c0b4e6`
+
 * il doit être **unique** dans un projet
 * on doit pouvoir faire des très nombreux commits dans un projet qui peut durer des années.
 
@@ -724,8 +719,10 @@ On voit maintenant apparaître le nom `HEAD`:
   sauf que, on le verra bientôt, on crée facilement plusieurs branches dans un repo  
 
   et donc le commit courant:
+
     * n'est *pas toujours* désigné par la référence `main`  
       (parce que ce n'est pas toujours la branche courante),
+
     * mais il est *toujours* désigné par `HEAD`
 
 +++
@@ -985,8 +982,10 @@ git diff --cached fact.py
 <img src="media/term-diff-cached.png" width="400px">
 
 La situation est exactement l'inverse que tout à l'heure :
+
 * il n'y a plus à présent de différences entre le fichier et l'index
   `git diff` ne trouve rien
+
 * et tous nos changements se retrouvent maintenant dans la seconde classe de changements,
   et sont donc rapportés par `git diff --cached`
 
@@ -1027,6 +1026,7 @@ c'est là que c'est intéressant, parce que justement il y a deux rubriques pour
 
 * *Staged changes* va nous montrer les différences entre le commit et l'index
   (comme `git diff --cached` donc)
+
 * *Changes* va nous montrer les différences entre les fichiers et l'index
   (comme `git diff` donc)
 
@@ -1165,6 +1165,7 @@ On peut utiliser `~` avec n'importe quelle référence, par exemple `main~`, ou 
 Prenons, comme exemple, les commits de `my-first-project`:
 ```bash
 $ git lg
+
 * afec18a (HEAD -> main) une implémentation plus juste de la fonction factorielle
 * e2c02ca première implémentation de factorielle dans le fichier fact.py
 * 31c4816 informations sur la licence
@@ -1198,6 +1199,7 @@ Vous remarquez que lorsqu'on passe, à `git log`, l'avant-avant-dernier commit (
 Nous avons vu qu'un commit peut avoir deux parents. Avec `~` on ne peut pas atteindre le second parent. Cela se fera fait en  utilisant `^`.
 
 `^` est un peu particulier:
+
 * `HEAD^`, il se trouve, désigne aussi, le premier parent
 * `HEAD^2` va désigner le second parent de `HEAD`
 * `HEAD^^` va désigner le parent du parent de `HEAD` $\approx$ `(HEAD^)^`
@@ -1259,6 +1261,7 @@ La commande `git branch` permet de lister, créer, détruire des branches
 
 ```bash
 $ git branch
+
 * main
 ```
 
@@ -1267,6 +1270,7 @@ $ git branch
 +++
 
 On n'a qu'une branche, `main`, et en face de son nom **il y a une `*`** car c'est **la branche courante**.  Pour en créer une autre (qu'on va appeler `devel` car c'est une tradition fréquente)  on va utiliser une autre forme de `git branch`, on lui passe: 
+
 * le nom de la branche
 * et le commit où veut poser la branche.  
  (faites `git branch --help` pour voir les détails). 
@@ -1277,6 +1281,7 @@ Du coup pour créer la branche `devel` sur le parent de `HEAD` on peut écrire
 $ git branch devel HEAD~
 $ git branch
   devel
+
 * main
 ```
 
@@ -1314,6 +1319,7 @@ def fact (n):
 +++
 
 À ce stade, il est crucial de bien faire la différence entre:
+
 * les **fichiers** présents dans le répertoire, qui appartiennent à ce qu'on a appelé l'*espace de travail*
 * les **commits** qui appartiennent quant à eux au **repository**
 
@@ -1341,6 +1347,7 @@ AVANT
 
 ```bash
 $ git log --oneline --graph --all
+
 * afec18a (HEAD -> main) une implémentation plus juste de la fonction factorielle
 * e2c02ca (devel) première implémentation de factorielle dans le fichier fact.py
 * 31c4816 informations sur la licence
@@ -1371,10 +1378,12 @@ def fact (n):
     pass
 
 $ git branch
+
 * devel
   main
 
 $ git log --oneline --graph --all
+
 * afec18a (main) une implémentation plus juste de la fonction factorielle
 * e2c02ca (HEAD -> devel) première implémentation de factorielle dans le fichier fact.py
 * 31c4816 informations sur la licence
@@ -1420,6 +1429,7 @@ Dans notre cas nous aurions fait `git switch -c devel HEAD~`
 (je veux dire, on fait un changement dans un fichier, on l'ajoute dans l'index avec `add`, et on le committe avec `commit`)
 
 En fait vous avez tous les éléments pour répondre:
+
 * le commit va être créé avec comme parent le commit courant, donc le troisième
 * la branche courante, à savoir `devel`, va monter d'un cran pour accompagner le commit nouvellement créé
 * `HEAD` va faire de même comme d'habitude.
@@ -1445,9 +1455,11 @@ pour ma part j'ai mis `licence CC` comme message de commit, et voici ce que j'ob
 
 ```bash
 $ git log --all --oneline --graph
+
 * bda7835 (HEAD -> devel) licence CC
 | * afec18a (main) une implémentation plus juste de la fonction factorielle
 |/
+
 * e2c02ca première implémentation de factorielle dans le fichier fact.py
 * 31c4816 informations sur la licence
 * 01b0604 licence+readme
@@ -1519,8 +1531,10 @@ nous allons utiliser la commande `git merge main`, mais avant de la taper, lisez
 * parce que le commit est produit par un `merge`, il va **avoir deux parents**  
   le premier est le commit courant `HEAD` (*aka* `devel`),   
   le second est (celui référencé par) `main`
+
 * puisque `devel` est la branche courante, le nouveau commit sera désigné par `devel`
   et donc **`devel` va avancer d'un cran**
+
 * et `main` qui n'est pas la branche courante reste sur place
 
 Donc toujours avant de taper la commande, pouvez-vous imaginer à quoi va ressembler la sortie de `git log` après le merge ?
@@ -1539,11 +1553,14 @@ Merge made by the 'recursive' strategy.
  1 file changed, 4 insertions(+), 1 deletion(-)
 
 $ git log --all --oneline --graph
+
 *   725be46 (HEAD -> devel) mon premier merge
 |\
 | * afec18a (main) une implémentation plus juste de la fonction factorielle
+
 * | bda7835 licence CC
 |/
+
 * e2c02ca première implémentation de factorielle dans le fichier fact.py
 * 31c4816 informations sur la licence
 * 01b0604 licence+readme

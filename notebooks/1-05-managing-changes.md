@@ -13,16 +13,7 @@ nbhosting:
   title: "diff\xE9rences pendantes"
 ---
 
-<div class="licence">
-<span>Licence CC BY-NC-ND</span>
-<div style="display:grid">
-    <span>Thierry Parmentelat</span>
-    <span>Valérie Roy</span>
-</div>
-</div>
-
-<img src="media/inria-25-alpha.png">
-<img src="media/ensmp-25-alpha.png">
+Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 +++
 
@@ -154,6 +145,7 @@ en général ça peut venir
 dans tous les cas, pas de panique, `git commit --amend` est fait pour ça
 
 le principe c'est de:
+
 * refaire un commit qui a le·s même·s parent·s que le commit courant
 * dans lequel on a **aussi** fait entrer l'index courant
 * et en redemandant le message bien entendu
