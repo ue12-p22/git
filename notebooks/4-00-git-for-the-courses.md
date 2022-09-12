@@ -46,8 +46,15 @@ distant; on explicite également les étapes de mise à jour ci-dessous
 
 +++
 
-avant de commencer, assurez-vous que vous avez [bien configuré git comme
-expliqué ici](0-00-setup.md)
+reportez-vous au cours d'introduction pour vous assurer, si besoin, que vous avez bien configuré git
+
+pour rappel, il est nécessaire de configurer
+
+* vos nom/prénom et adresse e-mail
+* l'éditeur à utiliser lors des commits (pour nous: vs-code)
+* la clé ssh
+* et, moins crucial, le nom de la branche par défaut (la convention moderne est
+  d'utiliser `main` et non plus `master`)
 
 +++
 
