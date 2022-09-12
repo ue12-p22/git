@@ -142,11 +142,11 @@ Il est très courant de mettre, dans un nouveau projet, un fichier de *readme* q
 
 Ca peut être un simple fichier de texte mais autant utiliser, pour ce que ce soit plus joli et plus *dans l'air du temps*, la syntaxe simple des fichiers *markdown*.
 
-On va donc créer un fichier `readme.md`; notons qu'on va le faire dans ce notebook, de manière super simple en redirigeant un petit morceau de texte dans un fichier de nom `readme.md`. Mais vous pouvez aussi ouvrir `vs-code` et y éditez vos fichiers (attention à bien les mettre dans le répertoire `my-first-project` !
+On va donc créer un fichier `readme.md`; notons qu'on va le faire dans ce notebook, de manière super simple en redirigeant un petit morceau de texte dans un fichier de nom `readme.md`. Mais vous pouvez aussi ouvrir `vs-code` et y éditer vos fichiers (attention à bien les mettre dans le répertoire `my-first-project` !)
 
 Nous allons faire un magnifique projet qui calcule la fonction factorielle, puisque la difficulé ici ne réside pas dans le code mais bien dans son organisation, restons simples.
 
-Nous créons un fichier `readme.md` en redirigeant, avec $>$ une chaîne de caractère, dans le fichier `readme.md`
+Nous créons un fichier `readme.md` en redirigeant, avec `>` une chaîne de caractère, dans le fichier `readme.md`
 
 +++
 
@@ -200,7 +200,8 @@ $ git version
 git version 2.30.1
 ```
 
-si vous n'avez pas exactement la même version, aucun souci, on n'utilisera aucune fonction avancée ni récente de `git`,  donc plus ou moins toutes les versions de `git` conviennent pour ce cours.
+si vous n'avez pas exactement la même version, aucun souci, on n'utilisera aucune fonction avancée ni récente de `git`, donc plus ou moins toutes les versions de `git` conviennent pour ce cours.  
+(**NOTE** faites-vous connaitre toutefois si vous n'avez pas au moins la version **2.23**, car la fonction `git switch` n'est disponible qu'à partir de cette version-là; on peut la substituer par certaines formes de `git checkout`, mais c'est moins logique à retenir...)
 
 +++
 
@@ -208,9 +209,9 @@ si vous n'avez pas exactement la même version, aucun souci, on n'utilisera aucu
 
 +++
 
-On revient à notre répertoire. Nous y avons deux fichiers. 
+On revient à notre répertoire. Nous y avons deux fichiers.
 
-Nous allons **transformer ce dossier en dépôt** (ou *repository*) en l'initialisant avec la commande `init` de `git`
+Nous allons **transformer ce dossier en dépôt** (ou *repository*) en l'initialisant avec la (sous-)commande `init` de `git`
 
 +++
 
@@ -221,7 +222,7 @@ Initialized empty Git repository in /home/alice/my-first-project/.git/
 
 +++
 
-Voilà ,vous avez créé un dépôt (ou *repository*, ou encore on dira aussi parfois *repo*), un dépôt `git`, qui pour commencer est **vide**. Non, les fichiers du répertoire n'ont pas été mis automatiquement dedans !
+Voilà, vous avez créé un dépôt (ou *repository*, ou encore on dira aussi parfois *repo*), un dépôt `git`, qui pour commencer est **vide**. Non, les fichiers du répertoire n'ont pas été mis automatiquement dedans !
 
 +++
 
@@ -254,9 +255,9 @@ $ ls -a
 
 qui nous montre plusieurs entrées de plus que `ls` tout court:
 
-1. `.` c'est le répertoire courant,
-1. `..` est son répertoire parent, et
-1. `.git` est le répertoire de travail de `git`
+* `.` c'est le répertoire courant,
+* `..` est son répertoire parent, et
+* `.git` est le répertoire de travail de `git`
 
 mais maintenant que vous avez vu ce répertoire `.git`, on **l'oublie entièrement**, car ce n'est qu'un détail d'implémentation qui n'a aucune importance surtout à notre niveau actuel.
 
@@ -285,10 +286,11 @@ Ce message vous dit plusieurs choses que nous allons détailler.
 ***
 ***On branch main***
 
-Dans un dépôt git, il y a toujours la notion de branche courante; on y reviendra, retenons pour l'instant qu'à la création du dépôt, on nous crée une branche qui s'appelle `main`, et qui est la branche courante 
+Dans un dépôt git, il y a toujours la notion de branche courante; on y reviendra, retenons pour l'instant qu'à la création du dépôt, on nous crée une branche qui s'appelle `main`, et qui est la branche courante
 
-**note:** depuis quelque temps, la branche créée par défaut  
-**s'appelle `main`** et non plus `master`
+**note:** avec les réglages qu'on a faits à la mise en place de `git` -
+`init.defaultbranch=main` - la branche créée par défaut **s'appelle `main`**, et
+non plus `master` qui est le nom historique mais plus guère usité.
 
 +++
 
@@ -297,7 +299,7 @@ Dans un dépôt git, il y a toujours la notion de branche courante; on y reviend
 
 Une autre information très intéressante: git vous dit que vous n'avez pas encore créé de **commit** !
 
-Faisons un peu de terminologie parce que `git` c'est super bien mais parfois un peu abscond, il faut s'habituer à son vocabulaire (donc on va insister un peu lourdement).
+Faisons un peu de terminologie parce que `git` c'est super bien mais parfois un peu abscons, il faut s'habituer à son vocabulaire (donc on va insister un peu lourdement).
 
 Le **commit** désigne une *version enregistrée* du projet, une sorte de *sauvegarde* ou encore de *snapshot* (un instantané) de votre projet **tout entier** à un instant (un peu comme le `backup1.zip` d'Alice dans les transparents)
 
@@ -383,13 +385,13 @@ Dans notre cas donc, notre premier commit va contenir les deux fichiers.
 
 +++
 
-Il va nous falloir **fournir un message** qui explique à quoi correspond ce commit. Ce message est **d'autant plus important** qu'il va nous servir à repérer l'idée derrière ce commit (*pourquoi on l'a fait*). 
+Il va nous falloir **fournir un message** qui explique à quoi correspond ce commit. Ce message est **d'autant plus important** qu'il va nous servir à repérer l'idée derrière ce commit (*pourquoi on l'a fait*).
 Pour l'instant restons bêtement simple, par exemple nous allons mettre un message qui dit juste `licence+readme`.
 Nous reviendrons ultérieurement sur les bonnes pratiques pour rédiger ces messages, mais une chose à la fois...
 
 Donc nous y voilà, `git` a une commande `commit`, pour créer un commit; pour lui indiquer quel message mettre dans le commit, on peut soit :
 
-* lancer juste `git commit`, et dans ce cas-là un éditeur de code va se lancer automatiquement; on est censé écrire le message dans le fichier, puis sauver et quitter; le truc c'est que vous n'êtes pas forcément confortable avec l'éditeur par défaut (notamment si c'est `vi` qui est notoirement cryptique); notez aussi qu'on peut choisir, une bonne fois pour toutes, 
+* lancer juste `git commit`, et dans ce cas-là un éditeur de code va se lancer automatiquement; on est censé écrire le message dans le fichier, puis sauver et quitter; le truc c'est que vous n'êtes pas forcément confortable avec l'éditeur par défaut (notamment si c'est `vi` qui est notoirement cryptique); notez aussi qu'on peut choisir, une bonne fois pour toutes,
 un autre éditeur comme par exemple `nano` avec la commande `git config --global
 core.editor "nano"`
 
@@ -413,13 +415,16 @@ $ git commit -m"licence+readme"
 
 +++
 
-N'essayons pas de comprendre les messages trop cryptiques, nous y reviendrons plus tard, retenons juste que les 2 fichiers ont été créés dans le commit, et nous sommes contents.
+N'essayons pas de comprendre les messages trop cryptiques, nous y reviendrons plus tard, retenons juste que les 2 fichiers ont été rangés dans le commit, et nous sommes contents.
 
 +++
 
 ## réparer la perte de fichiers
 
 +++
+
+**NOTE**  
+Attention, on va utiliser ici la commande `rm *` qui signifie, eh bien, de détruire tous les fichiers du répertoire courant; il va sans dire que c'est quelque chose qu'il faut **éviter de faire** dans la vraie vie; (voyez par exemple l'option `-i` de `rm` si vous devez vraiment faire une manipe de ce genre)
 
 Avant d'aller plus loin, et pour vous convaincre de l'intérêt d'avoir fait ce commit, imaginez qu'à ce stade vous perdez accidentellement vos fichiers (un `rm *` non-intentionnel est si vite arrivé...)
 
@@ -463,13 +468,13 @@ pourrait dire aussi quelque chose comme "*elle pointe vers un commit*".
 
 Avec `git` on a **toujours** la notion de **branche courante** pour savoir où on
 travaille. À l'**initialisation** d'un dépôt la **branche courante** porte par convention
-le nom de **`main`** (ou plus récemment, **`main`**)
+le nom de **`main`**
 
 D'autre part quand vous créez un commit, la branche courante "avance" pour désigner le
 nouveau commit.
 
-Donc dans notre cas, et tant qu'on ne crée pas de nouvelle branche, `main` va toujours
-désigner le dernier commit.
+Donc dans notre cas, et tant qu'on ne crée pas de nouvelle branche, `main` va **toujours
+désigner le dernier commit**.
 
 +++ {"cell_style": "split"}
 
@@ -489,7 +494,7 @@ Revenons à l'état de notre dépôt; `git status` nous dit aussi qu'il n'y a pl
 echo "la licence d'utilisation est dans le fichier licence.txt" >> readme.md
 ```
 
-(ici avec cette commande un peu absconse on a juste ajouté une ligne dans le fichier `readme.md`; dans vos manipulations vous pouvez utiliser vs-code par exemple pour faire la même chose)
+(ici avec cette commande un peu absconse, on a juste ajouté une ligne dans le fichier `readme.md`; dans vos manipulations vous pouvez utiliser vs-code par exemple pour faire la même chose)
 
 +++
 
@@ -511,7 +516,7 @@ echo "la licence sera spécifiée ultérieurement" >> licence.txt
 
 +++
 
-Enfin, créons aussi le fichier `fact.py` pour y implémenter la fonction factorielle en Python. Là aussi on va être rapide, on utilise la fonction `echo` de `bash` pour rediriger les deux lignes suivantes`"def (n):` et `    pass"`  dans le fichier `fact.py`. 
+Enfin, créons aussi le fichier `fact.py` pour y implémenter la fonction factorielle en Python. Là aussi on va être rapide, on utilise la fonction `echo` de `bash` pour rediriger les deux lignes suivantes`"def (n):` et `    pass"`  dans le fichier `fact.py`.
 
 ```bash
 echo "def fact (n):" > fact.py
@@ -556,7 +561,7 @@ git status
 Nous voyons là les trois états des **fichiers** de notre répertoire courant:
 
 
-   1. les fichiers **sous** gestion de version, **modifiés** depuis le dernier commit et **ajoutés** pour le prochain commit ici `readme.md`
+   1. les fichiers **sous** gestion de version (c'est-à-dire déjà prèsents dans le dernier commit), **modifiés** depuis le dernier commit et **ajoutés** pour le prochain commit ici `readme.md`
    1. les fichiers **sous** gestion de version, **modifiés** depuis leur dernier commit et **non ajoutés** ici `licence.txt`
    1. les fichiers qui ne sont **pas sous** gestion de version, ici `fact.py`
 
@@ -567,7 +572,7 @@ Nous pouvons maintenant décrire les **3 morceaux** de notre répertoire git:
 <img src="media/kn-repo-contents-3-add-index-commit.png" width="800px">
 
    - l'`espace de travail` avec tous les fichiers au sens usuel (ce que vous voyez dans l'explorateur de fichiers et dans votre éditeur de code), qui peuvent contenir un certain nombre de modifications par rapport au dernier commit
-   - l'`index` (ou `stage`) dans lequel on ajoute - avec `add` - certaines de ces modifications - et pas forcément toutes; l'index sert à préparer le prochain commit; dit autrement, quand on crée un commit, on fait un snapshot de ce qu'il y a dans l'index;
+   - l'`index` (ou `stage`) dans lequel on ajoute - avec `add` - certaines de ces modifications - et pas forcément toutes; l'index sert à **préparer le prochain commit**; dit autrement, quand on crée un commit, on fait un snapshot de ce qu'il y a dans l'index;
    - votre repository local `git` qui contient tous vos commits
 
 +++
@@ -644,7 +649,7 @@ $ git commit -m"informations sur la licence"
 
 +++
 
-Maintenant que nous avons fait deux commits, nous aimerions voir l'historique de notre dépôt. Il existe une commande pour cela qui vous donne la liste des commits avec des informations très importantes; `git log`, c'est le journal de bord, le rapport des commits du projet.
+Maintenant que nous avons fait deux commits, nous aimerions voir l'historique de notre dépôt. Il existe une commande pour cela qui vous donne la liste des commits avec des informations très importantes; `git log`, c'est le journal de bord, la liste des commits du projet.
 
 ```
 git log
@@ -666,7 +671,7 @@ Date:   Sat Sep 26 21:51:27 2020 +0200
 Vous voyez la liste des commits du plus récent au plus ancien.
 
 Pour chaque commit, vous avez:
-  - son identifiant unique (le looooooong nom orange)
+  - son identifiant unique (le looooooong nom après le mot `commit`)
   - l'auteur du commit
   - la date du commit
   - le message
@@ -684,15 +689,19 @@ On parle rapidement de l'identifiant d'un commit comme `34269b459201f87b65e7c47b
 
 Ils ont choisi de prendre des entiers écrits en base `16` et en codage hexadécimal, on utilise les 16 chiffres `0`, `1`, ..., `9`, `a`, `b`, `c`, `d`, `e`, `f` où `a = 10` et `f = 15` (ainsi par exemple `FF = 15*16 + 15 = 255` et oui on peut utiliser des miniscules ou des majuscules).
 
-Comme vous le voyez, cet identifiant est assez long (40 chiffres hexadécimaux) cela afin d'assurer de son unicité. Il s'appelle le **hash** du commit, ou encore son **sha1** - prononcer *chat-ouane*.
+Comme vous le voyez, cet identifiant est assez long (40 chiffres hexadécimaux) cela afin d'assurer de son unicité. Il s'appelle le **hash** du commit, ou encore son **sha1** - prononcer *chat-ouane* - c'est le petit nom de la fonction de hachage qui est utilisée ici
 
 On calcule rapidement:
-  - un caractère hexadécimal a $16$ valeurs, il se code sur $4$ bits ($2^4$)
-  - on a $40$ caractères hexadécimaux
-  - ça fait donc $40*4$ bits, donc $2^{160}$ *hash* (nombres) différents
-  - on est dans l'ordre de $10^{50}$.
+  - un caractère hexadécimal a 16 valeurs, il se code sur 4 bits ($2^4$)
+  - on a 40 caractères hexadécimaux
+  - ça fait donc 40*4 bits, donc $2^{160}$ *hash* (nombres) différents (2 puissance 160)
+  - on est dans l'ordre de $10^{50}$ (10 puissance 50)
 
-C'est tellement grand, qu'en général, 7 caractères suffisent à disambigüer les commits dans un dépôt (c'est vrai que $2^{7*4} = 2^{28} = 268.435.456$, le nombre de suites de 7 digits hexadécimaux, c'est déjà assez grand pour que les conflits soient rares). Aussi souvent, on n'utilisera que les $7$ premiers caractères du sha-1.
+Donc, chaque commit a **toujours** un sha-1 de **40 chiffres** hexa  
+Maintenant, quand on a besoin de désigner un commit (sur la ligne de commande), on n'a **pas besoin** de mettre tous les 40 chiffres, et en général il suffit de donner **les 7 premiers chiffres** (hexa toujours) pour être, **en pratique, non-ambigu**  
+c'est d'ailleurs ce que fait `git log`, et ça rend le listing beaucoup plus digeste
+
+C'est vrai que $2^{7*4} = 2^{28}$ = 268.435.456, le nombre de suites de 7 digits hexadécimaux, c'est déjà assez grand pour que les conflits soient rares.
 
 +++
 
@@ -700,7 +709,7 @@ C'est tellement grand, qu'en général, 7 caractères suffisent à disambigüer 
 
 +++
 
-Signalons tout de suite une présentation qui sera plus pratique, où chaque commit fait l'objet d'une ligne du rapport
+Revenons à `git log`, et signalons tout de suite une présentation qui sera plus pratique, où chaque commit fait l'objet **d'une seul ligne du rapport**
 
 ```bash
 git log --oneline
@@ -744,14 +753,13 @@ Voici une illustration; on a anticipé un petit peu, on a imaginé le cas où on
 
 +++ {"cell_style": "split"}
 
-ici la branche courante est `devel`
+ici la branche courante est `devel` (encadrée)
 
 `HEAD` désigne toujours **la branche courante** (même si celle-ci ne s'appelle pas `main`)
 
 après le commit les deux sont montées
 
-remarquez qu'ici `main` est restée au même endroit car elle n'est **pas** la branche courante
-
+remarquez qu'ici `main` est restée au même endroit car elle n'est **pas** la branche courante  
 `main` n'aurait pas bougé non plus même si elle avait référencé (pointé sur) le commit `C`
 
 +++
@@ -790,7 +798,7 @@ Nous voyons qu'un fichier a été créé dans le repo pour `fact.py`
 
 +++ {"tags": ["level_intermediate"]}
 
-N'essayez pas de comprendre le nombre qui apparaît après `create mode` là ca veut simplememnt dire que `fact.py` est un `Regular non-executable file`.
+N'essayez pas de comprendre le nombre qui apparaît après `create mode` là ca veut simplement dire que `fact.py` est un `Regular non-executable file`.
 
 +++
 
@@ -801,7 +809,6 @@ $ git log --oneline
 e2c02ca (HEAD -> main) première implémentation de factorielle dans le fichier fact.py
 31c4816 informations sur la licence
 01b0604 licence+readme
-$
 ```
 
 +++
@@ -813,8 +820,6 @@ $
 Si votre `git log --oneline` correspond au nôtre, sautez cette cellule.
 
 Sinon: pas de panique ! Cette cellule reprend toutes les commandes qui ont modifié votre repository `git`. Coupez ces lignes et collez les dans un terminal.
-
-Vous aurez un second sous-répertoire cette fois nommé `my-first-project-2`:
 
 <div style="font-size: 1vw; line-height:1.1;">
 
@@ -1096,7 +1101,7 @@ Alors pour l'instant ça ne fait que d'ajouter une petite étoile sur le coté g
 
 Sachez que vous pouvez (facilement) définir des raccourcis dans la configuration globale de `git`.
 
-Par exemple si je veux taper `git lg` à la place de `git log --oneline -- graph`, 
+Par exemple si je veux taper `git lg` à la place de `git log --oneline -- graph`,
 je vais definir un `alias` qui s'appelle `lg` pour `log --oneline -- graph`
 (qui existera *une bonne fois pour toutes*) de la manière suivante:
 
@@ -1161,7 +1166,7 @@ En supplément de ces manières, `git` propose des mécanismes permettant de "*n
 Ainsi par exemple, `HEAD` est le commit courant:
    - `HEAD~` est le premier parent de `HEAD`; donc l'avant dernier commit
    - `HEAD~2` est le premier parent du premier parent de `HEAD`
-   
+
 On peut utiliser `~` avec n'importe quelle référence, par exemple `main~`, ou `18b63f5~` si vous avez un SHA-1 qui vaut `18b63f5`.
 
 +++
@@ -1206,9 +1211,9 @@ Nous avons vu qu'un commit peut avoir deux parents. Avec `~` on ne peut pas atte
 
 * `HEAD^`, il se trouve, désigne aussi, le premier parent
 * `HEAD^2` va désigner le second parent de `HEAD`
-* `HEAD^^` va désigner le parent du parent de `HEAD` $\approx$ `(HEAD^)^`
-* dans `HEAD^^2` $\approx$ `(HEAD^)^2` avec `HEAD^` on va au premier parent puis, de là, on va au deuxième parent avec `^2`
-* alors que `HEAD^2^` $\approx$ `(HEAD^2)^`
+* `HEAD^^` va désigner le parent du parent de `HEAD` - qui se lit `(HEAD^)^`
+* dans `HEAD^^2` - qui se lit `(HEAD^)^2` : avec `HEAD^` on va au premier parent puis, de là, on va au deuxième parent avec `^2`
+* alors que `HEAD^2^` se lit `(HEAD^2)^`
 
 Et pourquoi ont-ils eu besoin de `~` parce que `HEAD~8` est plus simple à écrire que `HEAD^^^^^^^^`.
 
@@ -1265,7 +1270,6 @@ La commande `git branch` permet de lister, créer, détruire des branches
 
 ```bash
 $ git branch
-
 * main
 ```
 
@@ -1273,12 +1277,12 @@ $ git branch
 
 +++
 
-On n'a qu'une branche, `main`, et en face de son nom **il y a une `*`** car c'est **la branche courante**.  Pour en créer une autre (qu'on va appeler `devel` car c'est une tradition fréquente)  on va utiliser une autre forme de `git branch`, on lui passe: 
+On n'a qu'une branche, `main`, et en face de son nom **il y a une `*`** car c'est **la branche courante**.  Pour en créer une autre (qu'on va appeler `devel` car c'est une tradition fréquente)  on va utiliser une autre forme de `git branch`, on lui passe:
 
 * le nom de la branche
 * et le commit où veut poser la branche.  
- (faites `git branch --help` pour voir les détails). 
- 
+ (faites `git branch --help` pour voir les détails).
+
 Du coup pour créer la branche `devel` sur le parent de `HEAD` on peut écrire
 
 ```bash
@@ -1351,7 +1355,6 @@ AVANT
 
 ```bash
 $ git log --oneline --graph --all
-
 * afec18a (HEAD -> main) une implémentation plus juste de la fonction factorielle
 * e2c02ca (devel) première implémentation de factorielle dans le fichier fact.py
 * 31c4816 informations sur la licence
@@ -1382,12 +1385,10 @@ def fact (n):
     pass
 
 $ git branch
-
 * devel
   main
 
 $ git log --oneline --graph --all
-
 * afec18a (main) une implémentation plus juste de la fonction factorielle
 * e2c02ca (HEAD -> devel) première implémentation de factorielle dans le fichier fact.py
 * 31c4816 informations sur la licence
@@ -1459,7 +1460,6 @@ pour ma part j'ai mis `licence CC` comme message de commit, et voici ce que j'ob
 
 ```bash
 $ git log --all --oneline --graph
-
 * bda7835 (HEAD -> devel) licence CC
 | * afec18a (main) une implémentation plus juste de la fonction factorielle
 |/
@@ -1488,7 +1488,7 @@ c'est ici que vous pouvez commencer à voir en pratique l'intérêt de la notion
 
 +++ {"tags": ["framed_cell"]}
 
-exercice: on enleve le `--all` de la commande. Que remarquez vous ? 
+exercice: on enleve le `--all` de la commande. Que remarquez vous ?
 
 d'après vous, pourquoi ça se comporte comme ça ?
 
@@ -1557,7 +1557,6 @@ Merge made by the 'recursive' strategy.
  1 file changed, 4 insertions(+), 1 deletion(-)
 
 $ git log --all --oneline --graph
-
 *   725be46 (HEAD -> devel) mon premier merge
 |\
 | * afec18a (main) une implémentation plus juste de la fonction factorielle

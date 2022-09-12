@@ -61,7 +61,7 @@ on utilisera ce type de présentation dans la suite :
 
 +++
 
-### `git status` et `git diff` 
+### `git status` et `git diff`
 
 en général le dépôt n'est pas propre, on peut voir les (deux familles de) différences avec ces 2 commandes
 
@@ -104,7 +104,7 @@ jusqu'à maintenant on a travaillé "de gauche à droite"
 * d'une part cela peut causer des changements dans nos fichiers et/ou l'index
 * au point que certaines d'entre elles **peuvent nous faire perdre du contenu**
 
-à utiliser avec précaution donc; mais ça a une vraie utilité ! 
+à utiliser avec précaution donc; mais ça a une vraie utilité !
 
 typiquement, on met en chantier une feature, et au bout d'une heure on se dit, non vraiment ça n'est pas du coup comme ça qu'il fallait prendre le problème
 
@@ -128,7 +128,7 @@ pour jeter les changements non indexés
 
 +++ {"tags": ["level_intermediate"]}
 
-### `git reset --hard` 
+### `git reset --hard`
 
 pour se mettre inconditionnellement sur un commit, avec un dépôt propre
 
@@ -138,9 +138,9 @@ pour se mettre inconditionnellement sur un commit, avec un dépôt propre
 
 ## refaire un commit avec `git commit --amend`
 
-vous venez de faire un commit mais il est raté ! 
+vous venez de faire un commit mais il est raté !
 
-en général ça peut venir 
+en général ça peut venir
 
 1. soit du texte du message qu'on a tapé trop vite
 1. soit c'est plus profond, c'est le contenu

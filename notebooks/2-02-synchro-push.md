@@ -55,11 +55,11 @@ j'en profite pour signaler que le *fork* est une notion introduite par la surcou
 
 +++
 
-### un push ne peut faire qu'un fast-forward 
+### un push ne peut faire qu'un fast-forward
 
 l'autre différence importante, c'est que par sécurité on a décidé qu'avec `git push` on peut **seulement** faire des merge ***fast-forward***
 
-pourquoi ça ? l'idée c'est simplement que, si on se retrouve à devoir créer un commit de fusion à distance, il y a le risque de se trouver en présence de conflits; et dans ce cas-là une intervention manuelle est nécessaire; mais on n'a pas accès aux fichiers à distance pour résoudre le conflit, bref c'est possiblement dangereux 
+pourquoi ça ? l'idée c'est simplement que, si on se retrouve à devoir créer un commit de fusion à distance, il y a le risque de se trouver en présence de conflits; et dans ce cas-là une intervention manuelle est nécessaire; mais on n'a pas accès aux fichiers à distance pour résoudre le conflit, bref c'est possiblement dangereux
 
 sans discuter plus avant de la pertinence de ce choix, voyons d'abord comment tout cela fonctionne
 

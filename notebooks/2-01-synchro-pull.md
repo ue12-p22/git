@@ -100,7 +100,7 @@ cd sandbox
 
 ## les *remotes*
 
-tapons maintenant la commande 
+tapons maintenant la commande
 
 ```bash
 $ git remote
@@ -181,7 +181,7 @@ dit autrement, si vous ne faites jamais ni `git pull` ni `git fetch` pendant un 
 
 +++ {"tags": ["level_intermediate"]}
 
-**Note** 
+**Note**
 en pratique on fait plus souvent `git pull` que `git fetch`, car bien sûr souvent ce qu'on veut faire c'est se mettre à jour; et mon opinion c'est que c'est un peu dommage, car le fait de faire d'abord `fetch` permet de bien évaluer l'impact que va avoir le `pull` (notamment : est-ce un fast-forward ?)
 
 une fois qu'on a dit ça, si vous utilisez une GUI comme `Sourcetree` ou `GitKraken` ou autre, il y a de fortes chances qu'elle fasse pour vous un `git fetch` **automatiquement** - genre toutes les 5 minutes; c'est très pratique car ça permet, justement, de recevoir des notifications lorsqu'il y a du nouveau dans le dépôt *upstream*
@@ -195,7 +195,7 @@ la troisième chose à retenir est que, puisque `pull` finit par faire un `merge
 * premier cas (comme dans la vidéo) si le commit qui vient de l'*upstream* est un enfant de mon commit  
  (donc en gros, si je n'ai **pas créé de commit de mon coté** depuis la dernière fois que j'étais à jour)  
   le merge va se faire en mode ***fast-forward***, on n'a pas besoin de créer un commit de fusion  
-  je me retrouve sur **le même commit** que le remote 
+  je me retrouve sur **le même commit** que le remote
 
 * par contre, si entre temps j'avais fait un commit de mon côté, alors là le merge va **créer un commit de fusion**  
   ça va sans dire, mais forcément le commit de fusion est créé **dans mon dépôt** hein, forcément  

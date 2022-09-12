@@ -40,10 +40,10 @@ mais toutes les fusions ne se comportent pas de la même manière, et dans ce no
 
 ### rappels
 
-on rappelle que la forme générale de la fusion c'est 
+on rappelle que la forme générale de la fusion c'est
 
     git merge <to-merge>
-    
+
 et que l'effet escompté, c'est qu'on se retrouve à la fin sur  
 un commit qui **contienne à la fois le code courant et celui du commit `to-merge`**  
 
@@ -124,7 +124,7 @@ vous pourrez vous y reporter plus tard, lorsque vous aurez besoin de gérer un c
 
 allons-y, on va provoquer cette situation en pratique :
 
-* on va repartir d'un dépôt vierge, pour pouvoir expérimenter tranquillement, 
+* on va repartir d'un dépôt vierge, pour pouvoir expérimenter tranquillement,
   et on va commencer par y créer un fichier unique
 
 * on va créer deux branches distinctes qui touchent au même endroit du fichier
@@ -171,9 +171,9 @@ git commit -m"le formulaire vierge"
 
 ce qu'on veut faire, c'est simuler deux changements faits en même temps par deux personnes différentes; disons qu'on a deux profs, Minerva McGonagall et Albus Dumbledore, qui remplissent chacun leur partie
 
-pour simplifier on va dire que 
+pour simplifier on va dire que
 
-* McGonagall utilise la branche `main`, et 
+* McGonagall utilise la branche `main`, et
 * Dumbledore utilise une branche `dumbledore`
 
 Ils partent donc tous les deux du formulaire vide, ils remplissent chacun leur partie au mieux, et leurs versions respectives du fichier sont
@@ -194,7 +194,7 @@ Ils partent donc tous les deux du formulaire vide, ils remplissent chacun leur p
 
 +++ {"tags": ["level_intermediate"]}
 
-sauriez-vous simuler ce scénario ? 
+sauriez-vous simuler ce scénario ?
 
 pour McGonagall, c'est simple, comme on est sur main il suffit de modifier `form.txt` (1ère version, note 12) et de commiter
 
@@ -223,7 +223,7 @@ pour la deuxième version, on a besoin de créer la branche `dumbledore` et de r
 
 à ce stade, le formulaire est à nouveau vide (car on est revenu en arrière)
 
-on remplit alors la fiche dans la version dumbledore, et on commite exactement comme au dessus; 
+on remplit alors la fiche dans la version dumbledore, et on commite exactement comme au dessus;
 
 
 ```bash

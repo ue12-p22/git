@@ -51,15 +51,15 @@ HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_stati
 | `git commit` | créer un commit |
 | ￮￮￮￮￮￮￮￮￮￮￮￮ | ***les branches*** |
 | `git branch` | liste les branches connues |
-|  | `git branch newbranch <commit>` | 
-|  | pour créer une nouvelle branche | 
-| `git switch` | `git switch otherbranch` | 
+|  | `git branch newbranch <commit>` |
+|  | pour créer une nouvelle branche |
+| `git switch` | `git switch otherbranch` |
 |              | change de branche, l'index et les fichiers |
 |              | sont mis en phase avec la nouvelle branche |
 |              | `git switch -c newbranch <commit>` |
 |              | crée une nouvelle branche et y va |
 |              | raccourci pour `branch` + `switch` |
-| `git merge`  | `git merge <commit>`  | 
+| `git merge`  | `git merge <commit>`  |
 | | fusionne le commit |
 
 +++
@@ -87,7 +87,7 @@ notons que `git` permet de travailler sur plusieurs branches *en parallèle*: ai
 
 +++
 
-le flot de travail usuel est 
+le flot de travail usuel est
 
 workflow: *espace de travail → index → dépôt*
 

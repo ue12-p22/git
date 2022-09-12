@@ -35,11 +35,11 @@ Une notebook très court, où on revient rapidement sur la bonne façon de déco
 
 ### ne pas tout mélanger
 
-La première recommandation, sans doute la plus fondamentale, est de **bien regrouper les modifications qui vont ensemble**. 
+La première recommandation, sans doute la plus fondamentale, est de **bien regrouper les modifications qui vont ensemble**.
 
 En effet il arrive souvent qu'on se retrouve avec dans les fichiers une accumulation de changements; par exemple :
-1. pour écrire une nouvelle feature, travail qui a pris deux jours entiers, 
-1. on a **aussi** corrigé un typo dans un commentaire, 
+1. pour écrire une nouvelle feature, travail qui a pris deux jours entiers,
+1. on a **aussi** corrigé un typo dans un commentaire,
 1. et **aussi** récrit un bout de code pour utiliser une technique qu'on vient d'apprendre et qui est plus sûre.
 
 À ce stade on va committer, il **faut absolument** tirer profit de l'index qui, on l'a vu, nous permet justement de **ne pas tout committer d'un coup**, pour découper ces changements **en 3 commits distincts** - ou plus le cas échéant, si la feature elle-même peut être logiquement découpée en plusieurs étapes.
@@ -85,13 +85,13 @@ Au début on n'a pas les idées claires sur ce qu'il est intéressant de mention
 
 On peut commencer par dire **ce qui n'est pas intéressant** : ce n'est **pas la peine** de reprendre la **liste des fichiers** / fonctions / numéros de lignes modifiés: les outils d'UI graphique autour de git vous montreront tout ça très bien - et en plus ce sera garanti d'être correct.
 
-Il est souvent plus pertinent d'expliquer **pourquoi** on a fait le changement, plutôt que **comment** on l'a fait. 
+Il est souvent plus pertinent d'expliquer **pourquoi** on a fait le changement, plutôt que **comment** on l'a fait.
 
-Dites-nous par exemple que c'est la correction du bug numéro tant et tant; ou que c'est un refactoring qui prépare la feature telle et telle. 
+Dites-nous par exemple que c'est la correction du bug numéro tant et tant; ou que c'est un refactoring qui prépare la feature telle et telle.
 
 Mais ne nous dites pas que vous avez remplacé la fonction `schmoll` par la classe `Truc`, qui est quelque chose qu'on va voir facilement en lisant les différences..
 
-Avec un peu d'expérience on comprend assez vite ce qu'il est utile de mentionner ou pas; 
+Avec un peu d'expérience on comprend assez vite ce qu'il est utile de mentionner ou pas;
 clairement le fait de travailler en équipe, et donc d'être en situation de lire la production des autres, aide bien
 
 +++
@@ -130,9 +130,9 @@ Lorsqu'on utilise une plateforme comme github, il est fréquent de mentionner da
 
 On n'en a pas encore parlé, mais dans un projet github il y a la notion de *issue*, qui sont des simples fils de discussion, qui peuvent servir entre autres à signaler un bug; et la notion de *PR*, qui permettent aux autres de soumettre du code
 
-ainsi si par exemple l'*issue* numéro 123 signale un bug, et qu'on commite une correction pour ce bug, on va écrire simplement quelque part `close #123`, ce qui permettra 
+ainsi si par exemple l'*issue* numéro 123 signale un bug, et qu'on commite une correction pour ce bug, on va écrire simplement quelque part `close #123`, ce qui permettra
 
-* de lier le commit avec l'*issue*, et donc d'améliorer la traçabilité 
+* de lier le commit avec l'*issue*, et donc d'améliorer la traçabilité
 * et même de fermer automatiquement l'issue en question.
 
 On peut référencer de cette façon toutes sortes d'objets autres que les *issues*, voir les détails ici :
