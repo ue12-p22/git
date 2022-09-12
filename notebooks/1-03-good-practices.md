@@ -162,7 +162,7 @@ On a déjà parlé de cette feature dans vs-code, pour rappel:
 
 +++
 
-<video width="800px" controls src="media/vscode-line-by-line.mp4" type="video/mp4"></video>
+<video width="800px" controls src="_static/vscode-line-by-line.mp4" type="video/mp4"></video>
 
 +++
 
@@ -170,7 +170,7 @@ Pour information, on peut faire ce genre de choses également à partir d'outils
 
 +++
 
-<video width="800px" controls src="media/sourcetree-line-by-line.mp4" type="video/mp4"></video>
+<video width="800px" controls src="_static/sourcetree-line-by-line.mp4" type="video/mp4"></video>
 
 +++
 
