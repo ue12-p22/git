@@ -15,7 +15,11 @@ nbhosting:
 
 Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
-+++
+```{code-cell}
+%%python
+from IPython.display import HTML
+HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_static/style.html")
+```
 
 # `git` en local : les bases
 
