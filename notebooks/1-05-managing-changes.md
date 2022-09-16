@@ -16,6 +16,8 @@ nbhosting:
 Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell}
+:trusted: true
+
 %%python
 from IPython.display import HTML
 HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_static/style.html")
@@ -57,7 +59,7 @@ dans un premier temps on revoit, sous une forme visuelle, les commandes qu'on a 
 
 on utilisera ce type de présentation dans la suite :
 
-![](media/kn-lifecycle-1-clean.png)
+![](media/kn-lifecycle-1-clean.svg)
 
 +++
 
@@ -65,13 +67,13 @@ on utilisera ce type de présentation dans la suite :
 
 en général le dépôt n'est pas propre, on peut voir les (deux familles de) différences avec ces 2 commandes
 
-![](media/kn-lifecycle-2-status-diff.png)
+![](media/kn-lifecycle-2-status-diff.svg)
 
 +++
 
 ### j'utilise mon éditeur
 
-![](media/kn-lifecycle-3-editor.png)
+![](media/kn-lifecycle-3-editor.svg)
 
 le changement que je sauve δ s'ajoute en fait aux différences existantes, qui s'accumulent évidemment.
 
@@ -79,7 +81,7 @@ le changement que je sauve δ s'ajoute en fait aux différences existantes, qui 
 
 ### `git add`
 
-![](media/kn-lifecycle-4-add.png)
+![](media/kn-lifecycle-4-add.svg)
 
 la différence apparait maintenant dans la deuxième zone (*staged changes*)
 
@@ -87,7 +89,7 @@ la différence apparait maintenant dans la deuxième zone (*staged changes*)
 
 ### `git commit`
 
-![](media/kn-lifecycle-5-commit.png)
+![](media/kn-lifecycle-5-commit.svg)
 
 on crée le commit sur la base du contenu de l'index, du coup les deux (l'index et le dernier commit) sont maintenant égaux
 
@@ -116,15 +118,15 @@ ou encore, pendant le debug on a ajouté 250 instructions `print()`, qu'on veut 
 
 pour annuler le `add` : si un changement a été promu dans l'index, on peut le déclasser
 
-![](media/kn-lifecycle-6-reset.png)
+![](media/kn-lifecycle-6-reset.svg)
 
 +++ {"tags": ["level_intermediate"]}
 
-### `git checkout --`
+### `git restore --`
 
 pour jeter les changements non indexés
 
-![](media/kn-lifecycle-7-checkout.png)
+![](media/kn-lifecycle-7-restore.svg)
 
 +++ {"tags": ["level_intermediate"]}
 
@@ -132,7 +134,7 @@ pour jeter les changements non indexés
 
 pour se mettre inconditionnellement sur un commit, avec un dépôt propre
 
-![](media/kn-lifecycle-8-reset-hard.png)
+![](media/kn-lifecycle-8-reset-hard.svg)
 
 +++ {"tags": ["level_intermediate"]}
 
