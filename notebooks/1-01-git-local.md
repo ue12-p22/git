@@ -478,7 +478,7 @@ désigner le dernier commit**.
 
 +++ {"cell_style": "split"}
 
-![](media/kn-refs-branche-courante.png)
+![](media/kn-refs-branche-courante.svg)
 
 +++
 
@@ -569,7 +569,7 @@ Nous voyons là les trois états des **fichiers** de notre répertoire courant:
 
 Nous pouvons maintenant décrire les **3 morceaux** de notre répertoire git:
 
-<img src="media/kn-repo-contents-3-add-index-commit.png" width="800px">
+![](media/kn-repo-contents-3-add-index-commit.svg)
 
    - l'`espace de travail` avec tous les fichiers au sens usuel (ce que vous voyez dans l'explorateur de fichiers et dans votre éditeur de code), qui peuvent contenir un certain nombre de modifications par rapport au dernier commit
    - l'`index` (ou `stage`) dans lequel on ajoute - avec `add` - certaines de ces modifications - et pas forcément toutes; l'index sert à **préparer le prochain commit**; dit autrement, quand on crée un commit, on fait un snapshot de ce qu'il y a dans l'index;
@@ -749,7 +749,7 @@ Voici une illustration; on a anticipé un petit peu, on a imaginé le cas où on
 
 +++ {"cell_style": "split"}
 
-![](media/kn-refs-head.png)
+<img src="media/kn-refs-head.svg" width="60%">
 
 +++ {"cell_style": "split"}
 
@@ -927,7 +927,7 @@ Du fait de la présence de l'`index`, il y a deux classes de différences
 
 la commande `git diff` vient en deux versions (avec ou sans l'argument `--cached`) qui permettent de montrer ces deux classes de différences
 
-![](media/kn-diffs.png)
+![](media/kn-diffs.svg)
 
 +++
 
@@ -1126,7 +1126,7 @@ Pour illustrer un peu mieux, voyons un graphe un peu plus intéressant - on ne s
 
 +++ {"cell_style": "split"}
 
-<img src="media/kn-commit-parents.png" width="200px">
+<img src="media/kn-commit-parents.svg" width="200px">
 
 +++ {"cell_style": "split"}
 
@@ -1227,11 +1227,13 @@ Nous pourrons ainsi naviguer dans les graphes, par exemple:
 autrement dit,
 
 * *`X~`* est dans le sens de la hauteur, alors que
-* *`X^`* travaille dans le sens de la largeur; ce qui est illustré sur la figure ci-contre
+* *`X^`* travaille dans le sens de la largeur
+
+ce qui est illustré sur cette figure
 
 +++ {"tags": ["level_advanced"], "cell_style": "split"}
 
-<img src="media/kn-commit-navigation.png" width="200px">
+<img src="media/kn-commit-navigation.svg" width="40%">
 
 +++
 
