@@ -16,6 +16,8 @@ nbhosting:
 Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell}
+:trusted: true
+
 %%python
 from IPython.display import HTML
 HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_static/style.html")
@@ -47,7 +49,7 @@ Notez que même dans ce cadre délibérément limité, `git` remplit déjà plei
 
 mais bien sûr, on l'a vu dans les slides d'introduction, on peut aussi utiliser git pour travailler à plusieurs
 
-<img src="media/kn2-synchro-overview.png" width="800px">
+![](media/kn2-synchro-overview.svg)
 
 pour ça, on va **utiliser le réseau pour synchroniser deux dépôts**
 
