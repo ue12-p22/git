@@ -67,7 +67,7 @@ pour rappel, il est nécessaire de configurer
 * une fois dans le dossier où vous souhaitez cloner les notebooks  
   (par exemple `/Users/jeanmineur/git/ue12-p22`), faire
   ```bash
-  git clone https://github.com/ue12-p22/python-numerique.git
+  git clone git@github.com:ue12-p22/python-numerique.git
   ```
   pour trouver la bonne URL, regardez comment on fait dans la vidéo  
   en faisant bien attention de choisir le mode `SSH` comme ceci:  
