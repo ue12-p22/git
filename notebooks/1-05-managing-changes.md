@@ -156,18 +156,18 @@ le principe c'est de:
 * dans lequel on a **aussi** fait entrer l'index courant
 * et en redemandant le message bien entendu
 
-si bien que, selon le cas qui vous concerne dans les 2 ci-dessus, vous pouvez:
+si bien que, selon le cas qui vous concerne parmi ceux listés plus haut, vous pouvez:
 
 1. pour récrire votre message, refaites simplement  
    `git commit --amend`  
    juste après avoir fait le commit avec un message raté
    
-1. si c'est plus profond, ajoutez dans l'index  
+2. si c'est plus profond, ajoutez dans l'index  
    les changements qui manquent au commit courant  
    avant de faire ici encore  
    `git commit --amend`  
 
-1. dans le dernier cas, faites alors  
+3. dans le dernier cas, faites alors  
    `git commit --amend --author="Jean Dupont <jean.dupont@example.com>"`
   
 remarquez qu'on ne modifie pas le commit courant (les commits sont immutables), on en crée simplement un nouveau (le premier reste dans le repo, mais s'il est inatteignable, il sera nettoyé au bout de quelque temps)
