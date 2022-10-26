@@ -69,7 +69,7 @@ sans discuter plus avant de la pertinence de ce choix, voyons d'abord comment to
 
 cette vidéo décortique le fonctionnement de `push` dans un cas simple
 
-<video width="800px" controls src="_static/manim-Push.mp4" type="video/mp4"></video>
+<video width="800px" controls src="_static/Push.mp4" type="video/mp4"></video>
 
 +++
 
@@ -77,7 +77,7 @@ cette vidéo décortique le fonctionnement de `push` dans un cas simple
 
 dans la suite de la vidéo on envisage un cas (**très très fréquent**) où le push **ne peut pas se faire** avant que l'on ne fasse d'abord un `pull`
 
-<video width="800px" controls src="_static/manim-Needmanim-Pull.mp4" type="video/mp4"></video>
+<video width="800px" controls src="_static/NeedPull.mp4" type="video/mp4"></video>
 
 +++
 

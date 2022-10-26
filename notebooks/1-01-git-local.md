@@ -611,13 +611,13 @@ il faut insister également sur le fait que, lorsqu'on parle de l'index
 
 si on devait imaginer un *workflow* sans index, ça donnerait ceci :
 
-<video width="800px" controls src="_static/manim-NoIndex.mp4" type="video/mp4"></video>
+<video width="800px" controls src="_static/NoIndex.mp4" type="video/mp4"></video>
 
 +++
 
 grâce à l'index on peut choisir quels changements mettre ou pas dans le commit :
 
-<video width="800px" controls src="_static/manim-WithIndex.mp4" type="video/mp4"></video>
+<video width="800px" controls src="_static/WithIndex.mp4" type="video/mp4"></video>
 
 +++
 
