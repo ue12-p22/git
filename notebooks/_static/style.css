@@ -1,0 +1,41 @@
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.column.center {
+    align-items: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.note {
+    font-style: italic;
+    font-size: 80%;
+    width: auto;
+    background-color: #ccc;
+}
+
+.frame {
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius:5px
+}
+
+/* colors */
+.grey {
+    background-color: #eee;
+}
+
+.blue {
+    background-color: rgb(223, 235, 251);
+}
+
+.red {
+    background-color: rgb(234, 125, 110);
+}
+
+.pink {
+    background-color: pink;
+}

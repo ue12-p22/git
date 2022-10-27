@@ -155,7 +155,8 @@ on regarde son fonctionnement illustré dans une vidéo (dans le prolongement du
 
 <video width="800px" controls src="_static/Pull.mp4" type="video/mp4"></video>
 
-pour résumer, on peut dire que <span style="border: 1px solid blue; padding: 5px; border-radius:5px"><code>git pull</code> = <code>git fetch</code> + <code>git merge</code></span>
+pour résumer, on peut dire que
+<span class=frame><code git pull</code> = <code>git fetch</code> + <code>git merge</code></span>
 
 +++
 
