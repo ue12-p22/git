@@ -18,7 +18,7 @@ Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 ```{code-cell}
 %%python
 from IPython.display import HTML
-HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_static/style.html")
+HTML(url="https://raw.githubusercontent.com/ue12-p22/git/main/notebooks/_static/style.html")
 ```
 
 # commits & bonnes pratiques
