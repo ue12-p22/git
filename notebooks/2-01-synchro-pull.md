@@ -129,6 +129,16 @@ $ git remote get-url origin
 https://github.com/ue12-p22/git-sandbox
 ```
 
+<div class=note>
+
+le remote `origin` est créé par `git clone`  
+c'est pourquoi lorsqu'on procède dans l'autre sens (un repo créé localement qu'on veut pousser sur github),
+la formule proposée par github comporte justement la création manuelle du remote origin
+
+![](media/git-remote-add.png)
+
+</div>
+
 +++
 
 ## `git pull`
