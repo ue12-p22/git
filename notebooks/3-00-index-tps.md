@@ -42,6 +42,19 @@ quand on a fait plusieurs modifications distinctes, et qu'on veut les grouper en
 
 +++ {"tags": ["framed_cell"]}
 
+## tp-conflict
+
+un tp à faire individuellement  
+on crée délibérément un conflit pour savoir reconnaître les symptômes, et s'entrainer à résoudre le conflit
+
+<https://github.com/ue12-p22/git-tp-conflict>
+
++++
+
+***
+
++++ {"tags": ["framed_cell"]}
+
 ## tp-clone-pull
 
 nos cours sont publiés sur github, et vous les **clonez** chez vous  
@@ -87,9 +100,16 @@ un tp plus complet où on simule un travail en groupe
 
 +++ {"tags": ["framed_cell"]}
 
-## tp-conflict
+## tp-pull-request
 
-un tp à faire individuellement  
-on crée délibérément un conflit pour savoir reconnaître les symptômes, et s'entrainer à résoudre le conflit
+un tp à faire à deux  
 
-<https://github.com/ue12-p22/git-tp-conflict>
+* élève `A` crée un repo sur github, avec du contenu; le repo est **public**
+* pour la suite, c'est essentiellement élève `B` qui bosse, élève `A` peut profitablement regarder :)
+* élève `B` clone le repo, fait une modification dans un commit
+* élève `B` essaie de pousser son nouveau commit dans le github de `A`, mais échoue car il n'a pas les droits
+* élève `B` demande à github de lui créer **un *fork***
+* élève `B` pousse son commit dans son *fork* (il a le droit cette fois)
+* élève `B` crée (dans le repo de `A`) un *pull request**
+* élève `A` consulte le pull request, et accepte (merge) le changement
+* on vérifie que la modification de `B` est bien dans le repo de `A`
