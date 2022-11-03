@@ -13,15 +13,16 @@ html:
   use_repository_button: yes
   use_edit_page_button: yes
   use_issues_button: yes
-#  use_multitoc_numbering: true
-
-###
 
 only_build_toc_files: true
 
 execute:
-#  execute_notebooks: "force"
   execute_notebooks: cache
+
+parse:
+  myst_enable_extensions:
+    - html_image    # for raw <img> tags in markdown
+    - dollarmath    # for mathjax
 
 sphinx:
   config:
@@ -29,11 +30,6 @@ sphinx:
       .py:
         - jupytext.reads
         - fmt: py:percent
-#    extensions:
-#    - "sphinxcontrib.video"
-
-# for raw <img> tags in markdown
-parse:
-  myst_enable_extensions:
-    - html_image
-    - dollarmath
+    html_show_copyright: false
+    # not quite convincing but...
+    html_extra_path: ['media']
