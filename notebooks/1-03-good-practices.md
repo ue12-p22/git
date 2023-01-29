@@ -176,4 +176,4 @@ Pour information, on peut faire ce genre de choses également à partir d'outils
 et pour finir voice ce que xkcd a à dire sur les messages de commit ;)  
 (il les représente dans l'autre sens, les derniers en bas...)
 
-<img src="media/xkcd-git-commit.png" width="60%">
+![](media/xkcd-git-commit.png)

@@ -71,7 +71,8 @@ pour rappel, il est nécessaire de configurer
   ```
   pour trouver la bonne URL, regardez comment on fait dans la vidéo  
   en faisant bien attention de choisir le mode `SSH` comme ceci:  
-  <img src="media/github-choose-ssh.png" width="400px">
+
+  ![](media/github-choose-ssh.png)
 
 * un dossier va être créé, ici il s'appelle `python-numerique`  
   (si vous préférez un autre nom, ajoutez le à la commande ci-dessus)

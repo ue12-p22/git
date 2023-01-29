@@ -61,7 +61,7 @@ on rappelle aussi d'ailleurs, dans un autre registre, qu'il est sage de lancer l
 
 une fusion *fast-forward*, c'est le cas où **le commit courant est déjà un parent** (transitivement) de `to-merge`; comme par exemple ici :
 
-<img src="media/kn-merge-fast-forward.svg" width="400px">
+![](media/kn-merge-fast-forward.svg)
 
 * la branche courante est `main`, on fusionne avec le commit `devel`
 * on cherche donc à créer un commit qui contienne à la fois de code de `main` et de `devel`
@@ -90,7 +90,7 @@ ici dans le premier exemple on avait `to-merge=C → B → HEAD=A`, donc pas bes
 
 juste pour la curiosité, le cas se présente assez peu en pratique, mais que se passe-t-il d'après vous lorsque dans l'autre sens, on essaie de fusionner un parent ?
 
-<img src="media/kn-merge-anti-fast-forward.svg" width="200px">
+![](media/kn-merge-anti-fast-forward.svg)
 
 la réponse : rien du tout ! pourquoi ?
 
@@ -284,7 +284,7 @@ ouh là, il n'a pas l'air content !
 
 ce qui se passe, c'est ceci
 
-<img src="media/kn-merge-conflict.svg" width="600px">
+![](media/kn-merge-conflict.svg)
 
 * les changements faits dans la zone "chacun chez soi" peut être fusionnés sans souci
 * par contre comme les deux branches ont modifié la ligne de total chacune de leur côté  

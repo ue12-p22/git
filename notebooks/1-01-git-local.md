@@ -134,7 +134,7 @@ $ ls
 
 ```
 
-<img src='media/term-mkdir-cd-ls.png' width="500px">
+![](media/term-mkdir-cd-ls.png)
 
 +++
 
@@ -177,7 +177,7 @@ total 8
 4 -rw-r--r-- 1 vr vr 77 Sep  5 14:46 readme.md
 ```
 
-<img src="media/term-fill-readme.png" width="800px">
+![](media/term-fill-readme.png)
 
 +++
 
@@ -234,7 +234,7 @@ Comme pour toutes les commandes du système, de très nombreuses options sont di
 git init --help
 ```
 
-<img src="media/term-init-help.png" width="800px">
+![](media/term-init-help.png)
 
 +++ {"tags": ["level_intermediate"]}
 
@@ -275,7 +275,7 @@ Reprenons; maintenant si nous voulons voir où on en est de notre tout nouveau d
 git status
 ```
 
-<img src="media/term-status-red.png">
+![](media/term-status-red.png)
 
 +++
 
@@ -339,7 +339,7 @@ git add readme.md
 
 Que vous dit `git` ? Rien ! Il n'est pas très locace. Comment pouvons nous voir ce qui s'est passé ? oui en demandant le statut du repo avec `git status` !! Alors voilà j'ai vraiment besoin d'une copie d'écran, les couleurs sont très importantes:
 
-<img src="media/term-status-green-red.png">
+![](media/term-status-green-red.png
 
 Voilà, maintenant `git status` vous montre
 
@@ -364,7 +364,7 @@ vous devez voir :
 * que les deux fichiers fichiers apparaissent maintenant en vert dans la section *Changes to be committed*
 * et enfin qu'il n'y a plus de *untracked files*
 
-<img src="media/term-status-green.png">
+![](media/term-status-green.png)
 
 +++
 
@@ -411,7 +411,7 @@ $ git commit -m"licence+readme"
  create mode 100644 readme.md
 ```
 
-<img src="media/term-first-commit.png">
+![](media/term-first-commit.png)
 
 +++
 
@@ -554,7 +554,7 @@ Faisons `git status` afin de comprendre
 git status
 ```
 
-<img src="media/term-status-tracked-files.png">
+![](media/term-status-tracked-files.png)
 
 +++
 
@@ -715,7 +715,7 @@ Revenons à `git log`, et signalons tout de suite une présentation qui sera plu
 git log --oneline
 ```
 
-<img src="media/term-log-oneline.png" width="500px">
+![](media/term-log-oneline.png)
 
 +++
 
@@ -749,7 +749,7 @@ Voici une illustration; on a anticipé un petit peu, on a imaginé le cas où on
 
 +++ {"cell_style": "split"}
 
-<img src="media/kn-refs-head.svg" width="60%">
+![](media/kn-refs-head.svg)
 
 +++ {"cell_style": "split"}
 
@@ -950,7 +950,7 @@ Regardons maintenant la sortie de `git diff` sur `fact.py`, qui a été **modifi
 git diff fact.py
 ```
 
-<img src="media/term-diff.png" width="400px">
+![](media/term-diff.png)
 
 La sortie de `git diff` contient
    - en **- rouge** les lignes supprimées (ici `pass`)
@@ -988,7 +988,7 @@ Le `diff` entre l'`index` et le commit courant montre les différences:
 git diff --cached fact.py
 ```
 
-<img src="media/term-diff-cached.png" width="400px">
+![](media/term-diff-cached.png)
 
 La situation est exactement l'inverse que tout à l'heure :
 
@@ -1095,7 +1095,7 @@ $ git log --oneline --graph
 
 Alors pour l'instant ça ne fait que d'ajouter une petite étoile sur le coté gauche, mais c'est ça qui nous permettra de bien suivre les branches lorsqu'on en verra ! (*Notons qu'entre une figure et une autre, les `sha-1` peuvent ne pas être cohérents: les figures proviennent de plusieurs essais de repos).*
 
-<img src="media/term-log-graph.png" width="600px">
+![](media/term-log-graph.png)
 
 +++
 
@@ -1114,7 +1114,7 @@ Du coup c'est plus rapide à utiliser:
 git lg
 ```
 
-<img src="media/term-alias-oneline-graph.png" width="600px">
+![](media/term-alias-oneline-graph.png)
 
 +++
 
@@ -1126,7 +1126,7 @@ Pour illustrer un peu mieux, voyons un graphe un peu plus intéressant - on ne s
 
 +++ {"cell_style": "split"}
 
-<img src="media/kn-commit-parents.svg" width="200px">
+![](media/kn-commit-parents.svg)
 
 +++ {"cell_style": "split"}
 
@@ -1233,7 +1233,7 @@ ce qui est illustré sur cette figure
 
 +++ {"tags": ["level_advanced"], "cell_style": "split"}
 
-<img src="media/kn-commit-navigation.svg" width="40%">
+![](media/kn-commit-navigation.svg)
 
 +++
 
@@ -1275,7 +1275,7 @@ $ git branch
 * main
 ```
 
-<img src="media/term-branch.png" width="400px">
+![](media/term-branch.png)
 
 +++
 
@@ -1295,7 +1295,7 @@ $ git branch
 * main
 ```
 
-<img src="media/term-branch-devel.png" width="400px">
+![](media/term-branch-devel.png)
 
 +++
 
@@ -1310,7 +1310,7 @@ e2c02ca (devel) première implémentation de factorielle dans le fichier fact.py
 ```
 
 
-<img src="media/term-head-main-devel.png">
+![](media/term-head-main-devel.png)
 
 mais dans votre répertoire, le contenu de nos fichiers, dans notre espace de travail, est resté inchangé:
 ```bash
@@ -1370,7 +1370,7 @@ def fact (n):
     pass
 ```
 
-<img src="media/term-before-switch.png">
+![](media/term-before-switch.png)
 
 
 ON LE FAIT
@@ -1398,7 +1398,7 @@ $ git log --oneline --graph --all
 ```
 
 
-<img src="media/term-after-switch.png">
+![](media/term-after-switch.png)
 
 +++
 
@@ -1471,7 +1471,7 @@ $ git log --all --oneline --graph
 * 01b0604 licence+readme
 ```
 
-<img src="media/term-log-fork-all.png">
+![](media/term-log-fork-all.png)
 
 +++
 
@@ -1494,7 +1494,7 @@ exercice: on enleve le `--all` de la commande. Que remarquez vous ?
 
 d'après vous, pourquoi ça se comporte comme ça ?
 
-<img src="media/term-log-fork.png">
+![](media/term-log-fork.png)
 
 +++
 
@@ -1571,7 +1571,7 @@ $ git log --all --oneline --graph
 * 01b0604 licence+readme
 ```
 
-<img src="media/term-first-merge.png" width="600px">
+![](media/term-first-merge.png)
 
 +++
 
@@ -1581,7 +1581,7 @@ Regardons la différence entre `devel` et `main`
 git diff devel main
 ```
 
-<img src="media/term-diff-devel-main.png" width="600px">
+![](media/term-diff-devel-main.png)
 
 +++ {"tags": ["level_intermediate"]}
 
@@ -1621,4 +1621,4 @@ voir le notebook suivant, qui contient
 
 Et pour conclure ...
 
-<img src="media/xkcd-git.png" width="300px">
+![](media/xkcd-git.png)
