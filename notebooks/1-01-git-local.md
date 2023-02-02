@@ -1106,12 +1106,13 @@ je vais definir un `alias` qui s'appelle `lg` pour `log --oneline -- graph`
 (qui existera *une bonne fois pour toutes*) de la manière suivante:
 
 ```bash
-git config --global alias.lg "log --oneline --graph"
+git config --global alias.l "log --oneline --graph"
+git config --global alias.la "log --oneline --graph --all"
 ```
 
 Du coup c'est plus rapide à utiliser:
 ```bash
-git lg
+git l
 ```
 
 ![](media/term-alias-oneline-graph.png)
