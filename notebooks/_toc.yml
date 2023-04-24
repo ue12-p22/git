@@ -2,14 +2,14 @@ format: jb-book
 parts:
 - caption: git en local
   chapters:
-  - glob: 1-*
+  - glob: 1-*-nb
 - caption: "git en r\xE9seau"
   chapters:
-  - glob: 2-*
+  - glob: 2-*-nb
 - caption: index des TPs
   chapters:
-  - glob: 3-*
+  - glob: 3-*-nb
 - caption: git pour les cours
   chapters:
-  - glob: 4-*
-root: 1-00-intro
+  - glob: 4-*-nb
+root: 1-00-intro-nb

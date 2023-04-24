@@ -6,16 +6,16 @@ tracks:
   sections:
   - name: git en local
     notebooks:
-      - "notebooks/1-*.md"
+      - "notebooks/1-*-nb.md"
   - name: git en réseau
     notebooks:
-      - "notebooks/2-*.md"
+      - "notebooks/2-*-nb.md"
   - name: index des TPs
     notebooks:
-      - "notebooks/3-*.md"
+      - "notebooks/3-*-nb.md"
   - name: git pour les cours
     notebooks:
-      - "notebooks/4-*.md"
+      - "notebooks/4-*-nb.md"
 
 builds:
   - id: handouts
