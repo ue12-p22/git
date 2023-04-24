@@ -1,15 +1,15 @@
 format: jb-book
-root: 1-00-intro
 parts:
-- caption: "git en local"
+- caption: git en local
   chapters:
   - glob: 1-*
-- caption: "git en réseau"
+- caption: "git en r\xE9seau"
   chapters:
   - glob: 2-*
-- caption: "index des TPs"
+- caption: index des TPs
   chapters:
   - glob: 3-*
-- caption: "git pour les cours"
+- caption: git pour les cours
   chapters:
   - glob: 4-*
+root: 1-00-intro
